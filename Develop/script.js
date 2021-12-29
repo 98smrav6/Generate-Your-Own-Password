@@ -176,8 +176,8 @@ function generatePassword() {
 
 // Push new random special characters
   if (options.hasSpecialCharacters) {
-    possibleCharacters = possibleCharacters.concat(SpecialCharacters);
-    guaranteedCharacters.push(getRandom(SpecialCharacters));
+    possibleCharacters = possibleCharacters.concat(specialCharacters);
+    guaranteedCharacters.push(getRandom(specialCharacters));
   }
 
 //Push new random lower-cased character
