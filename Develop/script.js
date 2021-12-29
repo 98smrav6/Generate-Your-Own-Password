@@ -37,7 +37,29 @@ function getPasswordOptions() {
   // Variable to store boolean regarding the inclusion of uppercase characters
   var hasUpperCasedCharacters = confirm(
     'Click OK to confirm including uppercase characters.'
-  )
+  );
+
+  // Conditional statement to check if user does NOT include any types of characters.
+  if (
+    hasSpecialCharacters === false &&
+    hasNumericCharacters === false &&
+    hasLowerCasedCharacters === false &&
+    hasUpperCasedCharacters === false 
+  ) {
+    alert('Must select at least one character type');
+    return null;
+  }
+
+  // Object to store user input
+  var passwordOptions = {
+    length = length,
+    hasSpecialCharacters: hasSpecialCharacters,
+    hasNumericCharacters: hasNumericCharacters,
+    hasLowerCasedCharacters: hasLowerCasedCharacters,
+    hasUpperCasedCharacters: hasUpperCasedCharacters
+  };
+  
+  return passwordOptions;
 }
 
 function generatePassword() {
