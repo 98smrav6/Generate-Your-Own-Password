@@ -18,6 +18,26 @@ function getPasswordOptions() {
     alert('Password length must be less than 129 characters');
     return null;
   }
+  
+  // Variable to store boolean regarding the inclusion of special characters
+  var hasSpecialCharacters = confirm(
+    'Click OK to confirm including special characters.'
+  );
+
+  // Variable to store boolean regarding the inclusion of numeric characters
+  var hasNumericCharacters = confirm(
+    'Click OK to confirm including numeric characters.'
+  );
+
+  // Variable to store boolean regarding the inclusion of lowercase characters
+  var hasLowerCasedCharacters = confirm(
+    'Click OK to confirm including lowercase characters.'
+  );
+
+  // Variable to store boolean regarding the inclusion of uppercase characters
+  var hasUpperCasedCharacters = confirm(
+    'Click OK to confirm including uppercase characters.'
+  )
 }
 
 function generatePassword() {
