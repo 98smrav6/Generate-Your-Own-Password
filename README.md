@@ -20,3 +20,6 @@
 
 **Password is then generated.**
 ![Capture3](https://user-images.githubusercontent.com/89051027/147714573-4afc11b4-5380-4027-ab3e-02fa88b25219.PNG)
+
+
+**Check out Live Version of the site here: https://98smrav6.github.io/Generate-Your-Own-Password/Develop/index.html**
